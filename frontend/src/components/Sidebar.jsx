@@ -39,9 +39,9 @@ const Sidebar = () => {
       </div>
       <div className='overflow-y-auto w-full py-3'>
         {
-          filteredUsers.map(user => (
+          filteredUsers.map((user, index) => (
             <button
-              key={user.id}
+              key={index}
               onClick={() => setSelectedUser(user)}
               className={`w-full p-3 flex items-center gap-3 hover:bg-base-300 transition-colors ${selectedUser?.id === user.id ? 'bg-base-200' : ''}`}
             >

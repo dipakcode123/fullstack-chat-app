@@ -5,7 +5,6 @@ import toast from 'react-hot-toast';
 
 const MessageInput = () => {
 
-
   const [text, setText] = React.useState('');
   const [imagePreview, setImagePreview] = React.useState('');
   const fileInputRef = React.useRef(null);
